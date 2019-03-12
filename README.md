@@ -6,9 +6,10 @@ Visit [careerday.johnmatu.la](https://careerday.johnmatu.la) for a hosted exampl
 ## Format of the presentation
 One of my goals is to show how easy it is to start playing around with HTML and CSS. To do so, I start with a mostly finished site but have some gaps that I want to fill with the last remaining content. The stylesheet applied to the page is pretty minimal so that I can be earnest when I say that a website is mostly just this.
 
+I only have 30 minutes for this presentation, and with all the actual content I need to cover, the amount of HTML and CSS covered is really minimal. (It reminds me of the pace of a cooking show but around frontend technologies. 😅)
+
 Just like the presentation, then, there are two directories in this project: an `unfinished` one for the site that I start out with, and a `finished` one for what I end up with. The `finished` one includes extra comments to call out any spots where I had to compromise a bit (so that I wasn’t jumping around files so much).
 
-I have 30 minutes for this presentation, so it skews more toward content than it does toward in-depth looks at frontend technologies. There are a bunch of points to cover
 
 ## Content on the site
 I use the site to describe a little bit of what I do, how I got to my current professional spot, and how those just starting out can start to build up their own website skills.
