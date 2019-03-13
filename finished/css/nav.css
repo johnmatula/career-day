@@ -1,0 +1,37 @@
+nav {
+	background: #173342;
+	border-radius: 9999px;
+	left: .5rem;
+	font-size: .75rem;
+	padding: 0 1.25rem;
+	position: fixed;
+	right: .5rem;
+	top: .5rem;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	color: #f5f5e6;
+	display: inline-block;
+	padding: .5rem .75rem;
+	text-decoration: none;
+}
+
+nav a.active {
+	background-color: #254E66;
+}
+
+nav a:hover {
+	background-color: #ff9000;
+	color: #0d1214;
+}

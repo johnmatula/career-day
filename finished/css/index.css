@@ -1,0 +1,72 @@
+/*
+  black: 0D1214
+  dk blue: #173342
+  med blue: #254E66
+  light blue: #81BFDE
+  orange: #FF9000;
+  white: #F5F5E6
+*/
+
+/* Base styles */
+
+body, html {
+	align-items: center;
+	background-color: #F9F9f7;
+	color: #0d1214;
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+	height: 100%;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", sans-serif;
+}
+
+
+/* Headings */
+.intro {
+	background-color: #254E66;
+	border-radius: 1rem;
+	color: #f0f0e1;
+	font-weight: 600;
+	margin: 0 2rem 2rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+
+/* Navigation */
+
+nav {
+	background: #173342;
+	border-radius: 9999px;
+	margin: 0 .5rem;
+	padding: 0 1.25rem;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	color: #f5f5e6;
+	display: inline-block;
+	padding: .5rem .75rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #ff9000;
+	color: #0d1214;
+}
