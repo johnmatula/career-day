@@ -10,10 +10,16 @@
 /* Base styles */
 
 body, html {
-	background-color: #F9F9f7;
+	background-color: #f9f9f7;
 	color: #0d1214;
 	font-size: 22px;
 	margin: 1rem;
+}
+
+@media (max-width: 505px) {
+  body, html {
+    font-size: 16px;
+  }
 }
 
 body {
