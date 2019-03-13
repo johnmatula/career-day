@@ -8,12 +8,12 @@
 */
 
 /* Base styles */
-
 body, html {
 	background-color: #f9f9f7;
 	color: #0d1214;
 	font-size: 22px;
 	margin: 1rem;
+  transition: font-size .25s;
 }
 
 @media (max-width: 505px) {
@@ -26,11 +26,76 @@ body {
 	font-family: BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", sans-serif;
 }
 
+/* Page layout, like the main header and all content */
 h1 {
 	margin-top: 4rem;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
 }
 
 main {
 	line-height: 150%;
 	max-width: 35rem;
+}
+
+/* Links */
+main a {
+  color: #557EA6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main a:hover {
+  box-shadow: 0 -2px 0 #ff9000 inset;
+}
+
+main a:active {
+  box-shadow: 0 -2px 0 #173342 inset;
+  color: #173342;
+}
+
+/* Images and their captions */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img.image--full {
+  width: 100%;
+}
+
+figure {
+  background-color: #FFEDD6;
+	border-radius: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+figure.figure--left {
+  float: left;
+  margin-right: 1rem;
+  width: 30%;
+}
+
+figure.figure--right {
+  float: right;
+  margin-left: 1rem;
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  figure.figure--right {
+    margin-right: -20%;
+  }
+}
+
+figcaption {
+  color: #525251;
+  font-size: 0.875rem;
 }

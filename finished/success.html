@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Finding Success | John’s Career Day Site</title>
-	<link rel="stylesheet" href="/css/nav.css">
 	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/nav.css">
 </head>
 
 <body>
@@ -21,7 +21,64 @@
 	<main>
 		<h1>Finding Success</h1>
 		<p>Much like any other career path, being a successful website designer depends on what you find important.</p>
+    
+    <h2>💡 Tips for new website builders</h2>
+    <h3>Keep learning.</h3>
+    <p>The platform of the web is always changing and improving! You can do tons of cool stuff today, like create puzzle games, <a onclick="setSnackString()" id="snack">snack suggesters</a>, and synthesizers, all through the same HTML, CSS, and JavaScript.</p>
+    <p>Here’s how I got started, and how I like to keep up:</p>
+    <ul>
+      <li>Get your foundation settled
+        <ul>
+          <li>Remember to use a plain-text editor like Notepad or download a great, free one like <a href="https://atom.io">Atom</a>!</li>
+          <li><a href="https://www.codecademy.com/courses/learn-html/lessons/intro-to-html/exercises/intro">Codecademy Intro to HTML</a>, which helps you learn with examples!</li>
+          <li><a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">Build your first webpage</a>, step-by-step</li>
+        </ul>
+      </li>
+      <li>Style some things!
+        <ul>
+          <li><a href="https://scrimba.com/g/gintrotocss">Intro to CSS</a>, a video walkthrough series with examples</li>
+          <li>examples</li>
+        </ul>
+      </li>
+      <li>Advanced references that I constantly go back to
+        <ul>
+          <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+          <li><a href="https://developer.mozilla.org/">MDN Reference</a></li>
+          <li><a href="http://inclusivedesignprinciples.org">Designing sites inclusively</a></li>
+        </ul>
+      </li>
 	</main>
+  
+  <script>
+    // This function returns a randomly-generated string when a link is clicked.
+    
+    // For an example, using the `onclick` event is okay,
+    // but for bigger apps, you’ll want to use event listeners.
+    function setSnackString() {
+      
+      // Before we spit out a new snack, delete the old one if it exists.
+      var snackOutput = document.getElementById("snackString");
+      
+      if(snackOutput) {
+        snackOutput.remove();
+      }
+      
+      // Here's our two lists: some snacks and some responses.
+      var snacks = ["carrots and hummus", "pepperoni pizza", "Gushers", "yogurt", "a homemade cookie", "oatmeal", "beans and rice", "a few Skittles"];
+      var responses = ["maybe", "how about", "try", "do you want", "hmm,"];
+      
+      // Let's get a new snack! We pick two random numbers for the two lists.
+      var snackSelection = Math.floor(Math.random() * snacks.length);
+      var responseSelection = Math.floor(Math.random() * responses.length);
+      
+      // Put the parts of the phrase together...
+      var phrase = responses[responseSelection] + " " + snacks[snackSelection];
+      
+      // Get the button clicked--we'll put that phrase right after it.
+      var snack = document.getElementById("snack");
+      snack.insertAdjacentHTML('beforeend', '<span id="snackString"> (' + phrase + '?)</span>');
+    }
+  </script>
 </body>
 
 </html>

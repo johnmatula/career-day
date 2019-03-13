@@ -20,6 +20,7 @@ body, html {
 	justify-content: center;
 	margin: 0;
 	padding: 0;
+  transition: font-size .25s;
 }
 
 @media (max-width: 505px) {

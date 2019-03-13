@@ -37,3 +37,7 @@ nav a:hover {
 	background-color: #ff9000;
 	color: #0d1214;
 }
+
+nav a:active {
+	background-color: #df7000;
+}
