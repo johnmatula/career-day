@@ -4,9 +4,9 @@ This site is an interactive presentation for a middle school career day. In it, 
 Visit [careerday.johnmatu.la](https://careerday.johnmatu.la) for a hosted example of the finished product.
 
 ## Format of the presentation
-One of my goals is to show how easy it is to start playing around with HTML and CSS. To do so, I start with a mostly finished site but have some gaps that I want to fill with the last remaining content. The stylesheet applied to the page is pretty minimal so that I can be earnest when I say that a website is mostly just this.
+I rely on the website as my presentation. One of my goals is to show how easy it is to start playing around with HTML and CSS, so my site is mostly finished with some gaps to fill.
 
-I only have 30 minutes for this presentation, and with all the actual content I need to cover, the amount of HTML and CSS covered is really minimal. (It reminds me of the pace of a cooking show but around frontend technologies. 😅)
+Since I only have 30 minutes for this presentation plus questions, I have to be restrained in how much content and code I cover. The HTML and CSS covered is very basic stuff—hopefully with enough covered to entice people to learn more. (It feels kind of like the Frontend Cooking Show. 😅)
 
 Just like the presentation, then, there are two directories in this project: an `unfinished` one for the site that I start out with, and a `finished` one for what I end up with. The `finished` one includes extra comments to call out any spots where I had to compromise a bit (so that I wasn’t jumping around files so much).
 
